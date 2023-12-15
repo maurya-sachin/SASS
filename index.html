@@ -7,10 +7,11 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@700&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/sass/style.css">
+    <link rel="stylesheet" href="./assets/sass/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,7 +19,8 @@
 
 <body>
     <section class="header">
-        <h6>intern<span>us</span></h6>
+        <span id="navToggle"><i class="fa-solid fa-bars"></i></span>
+        <h2>intern<span class="us">us</span></h2>
         <nav>
             <div class="navLinks">
                 <a href="#">HOME</a>
@@ -53,6 +55,7 @@
                     letters,
                     as opposed to using 'Content here, content here, making it look like readable English.
                     <br>
+                    <br>
                     Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model
                     text,
                     and a
@@ -63,84 +66,102 @@
             </div>
         </div>
         <div class="stats">
-            <h2>intern<span>us</span> stats</h2>
             <div class="statContainer">
-                <div class="icon">
-                    <i class="fa-solid fa-calculator"></i>
-                    <h3>300+</h3>
-                    <p>Accountancy, banking & finance Jobs</p>
-                </div>
-                <div class="icon">
-                    <i class="fa-solid fa-pen-ruler"></i>
-                    <h3>100+</h3>
-                    <p>Arts & Designs Job</p>
-                </div>
-                <div class="icon">
-                    <i class="fa-solid fa-user"></i>
-                    <h3>50+</h3>
-                    <p>Consultant on board</p>
-                </div>
-                <div class="icon">
-                    <i class="fa-solid fa-industry"></i>
-                    <h3>20+</h3>
-                    <p>Projects in Pipline</p>
-                </div>
-            </div>
-            <div class="explore">
-                <div class="container">
-                    <img src="./assets/images/explore-layout-img.png" alt="">
-                    <h3>100+ Top consultancies looking for internship students</h3>
-                    <div class="exploreCircle">
-                        <img src="./assets/images/explore.png" alt="">
-                        <h4>EXPLORE</h4>
+                <div class="statBox">
+                    <h2>intern<span>us</span> stats</h2>
+                    <div class="iconBox">
+                        <div class="icon">
+                            <i class="fa-solid fa-calculator"></i>
+                            <h3>300+</h3>
+                            <p>Accountancy, banking & finance Jobs</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                            <h3>100+</h3>
+                            <p>Arts & Designs Job</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-user"></i>
+                            <h3>50+</h3>
+                            <p>Consultant on board</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-solid fa-industry"></i>
+                            <h3>20+</h3>
+                            <p>Projects in Pipline</p>
+                        </div>
                     </div>
                 </div>
-                <img src="./assets/images/circle-img.png" alt="">
+                <div class="explore">
+                    <div class="container">
+                        <img src="./assets/images/explore-layout-img.png" alt="">
+                        <h3>100+ Top consultancies looking for internship students</h3>
+                        <div class="exploreCircle">
+                            <div class="circle-box">
+                                <img src="./assets/images/explore.png" alt="">
+                                <h4>EXPLORE</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./assets/images/circle-img.png" alt="">
+                </div>
             </div>
+            <img src="./assets/images/stats-bg-img.png" alt="">
         </div>
         <div class="opportunities">
-            <h2>Amazing opportunities are now within your reach</h2>
             <div class="oppContainer">
-                <div class="tile">
-                    <img src="./assets/images/security_3045884.png" alt="">
-                    <h5>Best Services</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's</p>
-                </div>
-                <div class="tile">
-                    <img src="./assets/images/user.png" alt="">
-                    <h5>Talent Pool</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's</p>
-                </div>
-                <div class="tile">
-                    <img src="./assets/images/support.png" alt="">
-                    <h5>Dedicated Support</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's</p>
+                <h2>Amazing opportunities are now <br>within your reach</h2>
+                <div class="tileContainer">
+                    <div class="tile">
+                        <img src="./assets/images/security_3045884.png" alt="">
+                        <h5>Best Services</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's</p>
+                    </div>
+                    <div class="tile">
+                        <img src="./assets/images/user.png" alt="">
+                        <h5>Talent Pool</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's</p>
+                    </div>
+                    <div class="tile">
+                        <img src="./assets/images/support.png" alt="">
+                        <h5>Dedicated Support</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's</p>
+                    </div>
                 </div>
             </div>
             <img src="./assets/images/circle-img.png" alt="" class="oppCircle">
         </div>
         <div class="testimonial">
-            <h4>What do our esteemed clients say about us</h4>
-            <div class="testimonialImg">
-                <span>"</span>
-                <img src="./assets/images/testimonial-img-1.png" alt="">
+            <div class="container">
+                <h2>What do our esteemed clients <br>say about us</h2>
+                <div class="testimonialImg">
+                    <span>"</span>
+                    <img src="./assets/images/testimonial-img-1.png" alt="">
+                </div>
+                <p>Packages and web page editors now use .Lorem Ipsum as their am efault model text yr,and a search.
+                    orem
+                    Ipsum as their am efault model text yr and a search.
+                    <br>
+                    <br>
+                    <span>Bhumi Kapoor</span>
+                    <br>
+                    Abcl Pvt. ltd.
+                </p>
             </div>
-            <p>Packages and web page editors now use .Lorem Ipsum as their am efault model text yr,and a search. orem
-                Ipsum as their am efault model text yr and a search.
-                <br>
-                <span>Bhumi Kapoor</span>
-                Abcl Pvt. ltd.
-            </p>
+            <img src="./assets/images/testimonial-bg.png" alt="">
         </div>
         <div class="blogs">
             <div class="left">
-                <h4>Latest Blogs</h4>
+                <h2>Latest Blogs</h2>
                 <p>The point of using Lorem ipsum is that it has a more-or-less normal distribution of letters, as
                     opposed to using Content here,</p>
-                <a href="" class="blogButton"></a>
+                <a href="#" class="blogButton">View All</a>
             </div>
             <div class="right">
                 <div class="blogPost">
@@ -168,16 +189,16 @@
                 <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </div>
-        <div class="right">
-            <ul class="footerLinks">Useful Link
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms and Conditions</a></li>
-            </ul>
+        <ul class="footerLinks">Useful Link
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+        <div class="searchContainer">
             <h6>Subscribe Now</h6>
             <div class="search">
                 <input type="text">
@@ -194,6 +215,33 @@
         </div>
     </section>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const header = document.querySelector(".header");
+            const us = document.querySelector(".us");
+            const navToggle = document.getElementById("navToggle");
+
+            navToggle.addEventListener("click", toggleNav);
+
+            function toggleNav() {
+                const navList = document.querySelector("nav");
+                if (navList.style.display === 'none' || navList.style.display === '') {
+                    navList.style.display = 'flex';
+                    navList.style.opacity = 1;
+                    navToggle.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+                    navToggle.style.color = "#fff";
+                    us.style.color = "#fff";
+                    header.style.backgroundColor = "#fb0707";
+                } else {
+                    navList.style.display = "none";
+                    header.style.backgroundColor = "#fff";
+                    us.style.color = "#fb0707";
+                    navToggle.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+                }
+            }
+        });
+
+    </script>
 </body>
 
 </html>

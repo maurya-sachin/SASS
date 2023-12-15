@@ -1,13 +1,16 @@
 $red: #fb0707
+$footer: #3c3c3c
 $text-white: #fff
 $text-black: #000
-$h1-font: 40px
-$h2-font: 28px
-$h3-font: 26px
-$h4-font: 22px
-$h5-font: 20px
-$h6-font: 26px
-$normal-text: 12px
+$icon-medium: 3.5vw
+$icon-large: 5vw
+$h1-font: 2.5vw
+$h2-font: 2.3vw
+$h3-font: 2vw
+$h4-font: 1.5vw
+$h5-font: 1.3vw
+$normal-text: .85vw
+$large-text: 1.1vw
 $roboto: 'Roboto', sans-serif
 $container: .8vw 20vw
 $button-border: 12px
@@ -36,9 +39,11 @@ a
     @include space-between(space-between)
     width: 100%
     padding: $container
+    >span
+        display: none
 
-    h6
-        font-size: $h6-font
+    h2
+        font-size: $h2-font
         font-family: Georgia, 'Times New Roman', Times, serif
         font-weight: 600
         span
@@ -104,3 +109,290 @@ a
         width: 100%
         z-index: -1
         position: relative
+
+.main
+    overflow: hidden
+    .goals
+        @include center(center)
+        padding: $container
+        padding-top: 5vw
+        column-gap: 3vw
+        .left
+            img
+                width: 25vw
+        .right
+            h2
+                font-size: $h2-font
+                font-weight: 700
+                margin-bottom: 1.5vw
+            p
+                font-size: $normal-text
+    .stats
+        height: 100%
+        position: relative
+        >img
+            position: relative
+            width: 100%
+            z-index: -1
+            object-fit: cover
+        .statContainer
+            position: absolute
+            bottom: 10%
+            left: 0
+            width: 100%
+            @include center(center)
+            flex-direction: column
+            row-gap: 5vw
+            .statBox
+                @include center(center)
+                flex-direction: column
+                row-gap: 2vw
+                >h2
+                    font-size: $h2-font
+                    font-weight: 700
+                    span
+                        color: $red
+                .iconBox
+                    @include center(center)
+                    column-gap: 3vw
+                    padding: $container
+                    .icon
+                        @include center(center)
+                        flex-direction: column
+                        text-align: center
+                        row-gap: 1vw
+                        padding: 1.5vw
+                        width: 26vh
+                        i
+                            font-size: $icon-medium
+                            color: $red
+                        h3
+                            font-size: $h3-font
+                            font-weight: 700
+                        p
+                            font-size: $normal-text
+                            font-weight: 600
+                            letter-spacing: .5px
+            .explore
+                position: relative
+                padding: $container
+                .container
+                    padding-left: 15vw
+                    position: relative
+                    >img
+                        width: 25vw
+                        position: absolute
+                        left: 0
+                        bottom: -3%
+
+                    h3
+                        text-align: start
+                        font-size: $h3-font
+                        color: $text-white
+                        background-color: $red
+                        padding: 7vw 8vw
+                        padding-left: 12vw
+                        border-top-left-radius: 100px
+
+                    .exploreCircle
+                        position: absolute
+                        bottom: -20%
+                        right: -1%
+                        width: 11vw
+
+                        .circle-box
+                            position: relative
+                            @include center(center)
+                            img
+                                position: relative
+                                width: 100%
+                            h4
+                                position: absolute
+                                z-index: 3
+                                font-size: $h4-font
+                >img
+                    position: absolute
+                    bottom: 0
+                    left: -9%
+                    width: 13vw
+    .opportunities
+        padding: $container
+        padding-top: 3vw
+        padding-bottom: 3vw
+        position: relative
+        .oppContainer
+            @include center(center)
+            flex-direction: column
+            text-align: center
+            row-gap: 5vw
+            h2
+                font-size: $h2-font
+            .tileContainer
+                @include center(center)
+                column-gap: 5vw
+                .tile
+                    @include center(center)
+                    flex-direction: column
+                    row-gap: 1vw
+                    width: 35vh
+                    img
+                        width: $icon-large
+                    h5
+                        font-size: $h5-font
+                    p
+                        font-size: $normal-text
+                        font-weight: 700
+        >img
+            position: absolute
+            bottom: 0
+            right: -8%
+            width: 13vw
+    .testimonial
+        position: relative
+        >img
+            position: relative
+            z-index: -1
+            object-fit: cover
+            width: 100%
+
+        .container
+            padding: $container
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            @include center(center)
+            flex-direction: column
+            row-gap: 3vw
+            text-align: center
+            h2
+                font-size: $h2-font
+            .testimonialImg
+                position: relative
+                @include center(center)
+                img
+                    width: 12vw
+                span
+                    position: absolute
+                    font-size: 12vw
+                    font-family: 'BIZ UDGothic', sans-serif
+                    color: $red
+                    top: -60%
+                    left: -60%
+                    transform: rotate(180deg)
+            p
+                font-size: $h4-font
+                padding: 0 12vw
+                line-height: 1.8vw
+                span
+                    font-weight: 700
+    .blogs
+        @include center(center)
+        padding: $container
+        column-gap: 4vw
+        padding-top: 5vw
+        padding-bottom: 5vw
+        .left
+            @include center(center)
+            flex-direction: column
+            margin-top: 6vw
+            row-gap: 1vw
+            h2
+                font-size: $h2-font
+                font-weight: 900
+            p
+                font-size: $normal-text
+            a
+                background-color: $red
+                width: 100%
+                text-align: center
+                padding: 1vw
+                color: $text-white
+                border-top-left-radius: $button-border
+                border-bottom-right-radius: $button-border
+        .right
+            @include center(center)
+            column-gap: 2vw
+            .blogPost
+                @include center(center)
+                flex-direction: column
+                align-items: start
+                row-gap: 1vw
+                cursor: pointer
+                img
+                    width: 20vw
+                    border-radius: $button-border
+                p
+                    font-size: $normal-text
+                p:last-child
+                    font-weight: 700
+
+.footer
+    background-color: $footer
+    color: $text-white
+    padding: $container
+    padding-top: 5vw
+    padding-bottom: 5vw
+    @include space-between(space-around)
+    column-gap: 8vw
+    .left
+
+        @include center(center)
+        flex-direction: column
+        align-items: start
+        row-gap: 1vw
+        p:first-child
+            font-weight: 700
+        p
+            font-size: $normal-text
+        .social
+            @include center(center)
+            column-gap: 1vw
+            a
+                background-color: $text-white
+                border-radius: 50%
+                @include center(center)
+                width: 2.5vw
+                height: 2.5vw
+                color: $text-black
+                i
+                    font-size: $normal-text
+    .footerLinks
+        list-style: none
+        font-weight: 900
+        width: 100%
+        a
+            text-decoration: none
+            color: $text-white
+            font-size: $normal-text
+            font-weight: 500
+    .searchContainer
+        width: 100%
+        h6
+            font-size: $large-text
+            font-weight: 900
+            margin-bottom: 1vw
+
+        .search
+            background-color: $text-white
+            display: flex
+            justify-content: space-between
+            input
+                border: none
+                padding: .8vw 2vw .8vw .8vw
+            input:focus
+                outline: none
+            i
+                background-color: $red
+                height: 100%
+                cursor: pointer
+                padding: .8vw 1vw
+        .contact,.mail
+            @include center(center)
+            justify-content: start
+            column-gap: 1vw
+            margin: 1vw 0
+            font-size: $large-text
+            i
+                font-size: $large-text
